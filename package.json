@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "@turf/random": "^6.0.2",
+    "@turf/turf": "^5.1.6",
+    "d3-request": "^1.0.6",
+    "deck.gl": "^7.0.0-rc.1",
+    "immutable": "^4.0.0-rc.12",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-map-gl": "^4.1.2",
+    "react-scripts": "2.1.8",
+    "turf-random": "^3.0.12"
   },
   "scripts": {
     "start": "react-scripts start",
