@@ -1,5 +1,5 @@
-###DeckGL + React### 
+### DeckGL + React ### 
 
-#Data Visualization#
+# Data Visualization #
 
 Experimenting with DeckGL Uber library for data visualization in React
