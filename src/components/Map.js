@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import DeckGL, {LineLayer} from 'deck.gl';
 import {StaticMap} from 'react-map-gl';
-import LAYER_POLY from './PolygonLayer'
+import LAYER_POLY from './layers/PolygonLayer'
+import LAYER_GRID from './layers/GridLayer';
 
 // Set your mapbox access token here
 const MAPBOX_TOKEN = 'pk.eyJ1IjoibWF0dGhhdXNlbiIsImEiOiJjanVvaDF1N2UweGlyM3ltdTZ1c2U3YWdvIn0.fWPrCVx2EAnHIyKgwZdP1Q';
@@ -29,7 +30,7 @@ class Map extends Component {
       <DeckGL
         initialViewState={initialViewState}
         controller={true}
-        layers={LAYER_POLY}
+        layers={LAYER_GRID}
       >
         <StaticMap mapboxApiAccessToken={MAPBOX_TOKEN} />
       </DeckGL>
