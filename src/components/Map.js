@@ -25,7 +25,10 @@ class Map extends Component {
         controller={true}
         layers={LAYER_SCATTERPLOT}
       >
-        <StaticMap mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} />
+        <StaticMap
+          mapStyle="mapbox://styles/mapbox/dark-v9"
+          mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN}
+        />
       </DeckGL>
     );
   }

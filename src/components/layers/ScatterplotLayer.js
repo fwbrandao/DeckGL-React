@@ -20,7 +20,7 @@ const LAYER_SCATTERPLOT = new ScatterplotLayer({
     lineWidthMinPixels: 1,
     getPosition: d => d.coordinates,
     getRadius: d => Math.sqrt(d.exits),
-    getFillColor: d => [255, 140, 0],
+    getFillColor: d => [77, 77, 255],
     getLineColor: d => [0, 0, 0],
     onHover: ({object, x, y}) => {
       const tooltip = `${object.name}\n${object.address}`;
