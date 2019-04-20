@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import DeckGL, {LineLayer} from 'deck.gl';
+import DeckGL from 'deck.gl';
 import {StaticMap} from 'react-map-gl';
 import LAYER_POLY from './layers/PolygonLayer'
 import LAYER_GRID from './layers/GridLayer';
+import LAYER_LINEAR from './layers/Linelayer';
 
 // Set your mapbox access token here
 const MAPBOX_TOKEN = 'pk.eyJ1IjoibWF0dGhhdXNlbiIsImEiOiJjanVvaDF1N2UweGlyM3ltdTZ1c2U3YWdvIn0.fWPrCVx2EAnHIyKgwZdP1Q';
@@ -17,14 +18,8 @@ const initialViewState = {
   bearing: 0
 };
 
-// Data to be used by the LineLayer
-const data = [{sourcePosition: [-122.41669, 37.7853], targetPosition: [-122.41669, 37.781]}];
-
 class Map extends Component {
   render() {
-    const layers = [
-      new LineLayer({id: 'line-layer', data})
-    ];
 
     return (
       <DeckGL
