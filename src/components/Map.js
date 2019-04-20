@@ -4,6 +4,7 @@ import {StaticMap} from 'react-map-gl';
 import LAYER_POLY from './layers/PolygonLayer'
 import LAYER_GRID from './layers/GridLayer';
 import LAYER_LINEAR from './layers/Linelayer';
+import LAYER_SCATTERPLOT from './layers/ScatterplotLayer';
 
 // Set your mapbox access token here
 const MAPBOX_TOKEN = 'pk.eyJ1IjoibWF0dGhhdXNlbiIsImEiOiJjanVvaDF1N2UweGlyM3ltdTZ1c2U3YWdvIn0.fWPrCVx2EAnHIyKgwZdP1Q';
@@ -25,7 +26,7 @@ class Map extends Component {
       <DeckGL
         initialViewState={initialViewState}
         controller={true}
-        layers={LAYER_GRID}
+        layers={LAYER_SCATTERPLOT}
       >
         <StaticMap mapboxApiAccessToken={MAPBOX_TOKEN} />
       </DeckGL>
