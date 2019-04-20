@@ -2,7 +2,8 @@ import {ScatterplotLayer} from '@deck.gl/layers';
 
 
 const scatterPlotData = [
-    {name: 'Colma (COLM)', code:'CM', address: '365 D Street, Colma CA 94014', exits: 4214, coordinates: [-122.466233, 37.684638]},
+    {name: 'Charing Cross', code:'CC', address: 'Charing Cross', exits: 4214, coordinates: [-0.118092, 51.509865]},
+    {name: 'new point', code:'CC', address: 'new point', exits: 4214, coordinates: [-0.128092, 51.519865]},
 ]
 
 
