@@ -5,6 +5,7 @@ import LAYER_POLY from "./layers/PolygonLayer";
 import LAYER_GRID from "./layers/GridLayer";
 import LAYER_LINEAR from "./layers/Linelayer";
 import LAYER_SCATTERPLOT from "./layers/ScatterplotLayer";
+import FlightLayer from './layers/FlightLayer';
 
 const MAPBOX_ACCESS_TOKEN =
   "pk.eyJ1IjoibWF0dGhhdXNlbiIsImEiOiJjanVvaDF1N2UweGlyM3ltdTZ1c2U3YWdvIn0.fWPrCVx2EAnHIyKgwZdP1Q";
@@ -19,7 +20,7 @@ const initialViewState = {
 
 class Map extends Component {
   render() {
-    return (
+    return (<div>
       <DeckGL
         initialViewState={initialViewState}
         controller={true}
@@ -30,6 +31,9 @@ class Map extends Component {
           mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN}
         />
       </DeckGL>
+
+      <FlightLayer />
+      </div>
     );
   }
 }

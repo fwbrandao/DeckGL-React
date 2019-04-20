@@ -25,29 +25,3 @@ const LAYER_POLY = new PolygonLayer({
   getLineWidth: 250
 });
 export default LAYER_POLY;
-
-
-/* 
-
- Data format:
-   * [
-   *   {
-   *     // Simple polygon (array of coords)
-   *     contour: [[-122.4, 37.7], [-122.4, 37.8], [-122.5, 37.8], [-122.5, 37.7], [-122.4, 37.7]],
-   *     zipcode: 94107,
-   *     population: 26599,
-   *     area: 6.11
-   *   },
-   *   {
-   *     // Complex polygon with holes (array of rings)
-   *     contour: [
-   *       [[-122.4, 37.7], [-122.4, 37.8], [-122.5, 37.8], [-122.5, 37.7], [-122.4, 37.7]],
-   *       [[-122.45, 37.73], [-122.47, 37.76], [-122.47, 37.71], [-122.45, 37.73]]
-   *     ],
-   *     zipcode: 94107,
-   *     population: 26599,
-   *     area: 6.11
-   *   },
-   *   ...
-   * ]
-   * */

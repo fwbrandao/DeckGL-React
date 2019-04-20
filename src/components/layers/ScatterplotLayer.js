@@ -14,13 +14,13 @@ const LAYER_SCATTERPLOT = new ScatterplotLayer({
     opacity: 0.8,
     stroked: true,
     filled: true,
-    radiusScale: 6,
+    radiusScale: 2,
     radiusMinPixels: 1,
     radiusMaxPixels: 100,
     lineWidthMinPixels: 1,
     getPosition: d => d.coordinates,
     getRadius: d => Math.sqrt(d.exits),
-    getFillColor: d => [77, 77, 255],
+    getFillColor: d => [43, 187, 255],
     getLineColor: d => [0, 0, 0],
     onHover: ({object, x, y}) => {
       const tooltip = `${object.name}\n${object.address}`;

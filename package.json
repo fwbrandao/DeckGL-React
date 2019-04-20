@@ -5,6 +5,7 @@
   "dependencies": {
     "@turf/random": "^6.0.2",
     "@turf/turf": "^5.1.6",
+    "axios": "^0.18.0",
     "d3-request": "^1.0.6",
     "deck.gl": "^7.0.0-rc.1",
     "immutable": "^4.0.0-rc.12",
