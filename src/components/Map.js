@@ -24,15 +24,13 @@ class Map extends Component {
       <DeckGL
         initialViewState={initialViewState}
         controller={true}
-        layers={LAYER_SCATTERPLOT}
+        layers={FlightLayer}
       >
         <StaticMap
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN}
         />
       </DeckGL>
-
-      <FlightLayer />
       </div>
     );
   }
